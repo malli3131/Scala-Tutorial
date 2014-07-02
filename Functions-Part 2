@@ -27,6 +27,29 @@ Result:
 2
 6
 
+***************************************************
+
+Hai Padma use this code for factorial computation:
+
+package com.examples.functions
+
+object Fact {
+  def fact(num: Int): Int = {
+
+    if (num == 0 || num == 1) {
+      return 1;
+    } else {
+      return num * fact(num - 1);
+    }
+  }
+
+  def main(args: Array[String]) {
+    val f = fact(6)
+    println(f)
+  }
+}
+
+*****************************************
 
 Partially Applied Functions:
 When we invoke a function, its like applying the function to the arguments. If we send only few arguments, it is called a 
